@@ -1,0 +1,214 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+}
+
+header {
+    background-color: #003049;
+    height: 60px;
+    padding: 20px;
+}
+
+.Logo {
+    float: left;
+}
+
+.Logo img {
+    height: 30px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: #F5F5F5;
+    text-decoration: none;
+    text-emphasis-style: bold;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.hero-sentence {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    padding-left: 130px;
+}
+
+.hero-section h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+}
+
+.wrapper {
+    word-wrap: break-word;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #EA3546;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 75px;
+}
+
+.floating-block {
+    background-color: white;
+    background-position: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 30%;
+    margin-right: 30%;
+    line-height: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+#mySkills {
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    margin-right: 5px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+#myWork-Grid {
+    display: grid;
+    grid-template-rows: max-content 3fr 3fr 3fr max-content 100px 300px;
+    background-color: #003049;
+    color: #F5F5F5;
+    gap: 10px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 30%;
+    justify-items: center
+}
+
+p {
+    max-width: 400px;
+    font-size: 24px;
+}
+
+.circle-background1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #EA3546;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-background2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #F86624;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-background3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #43BCCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #43BCCD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+
+.view-project1 {
+    background-color: #EA3546;
+}
+
+.view-project2 {
+    background-color: #F86624;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.footer-section {
+    background-color: #003049;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid white;
+    border-top-width: 500px;
+}
+
+@media only screen and (max-width: 600) {
+    #flexContainer {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+    }
+}
