@@ -3,11 +3,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
-}
-
 header {
     background-color: #003049;
     height: 60px;
@@ -33,9 +28,15 @@ nav {
 nav a {
     color: #F5F5F5;
     text-decoration: none;
-    text-emphasis-style: bold;
+    font-weight: bold;
     margin-top: 20px;
     margin-right: 40px;
+}
+
+nav a:hover {
+    color: #43BCCD;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .hero-section {
@@ -45,25 +46,69 @@ nav a {
 .round-image {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
-    margin-top: 30px;
+    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .hero-sentence {
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
     line-height: 1.5;
-    padding-left: 130px;
+    margin-left: 160px;
 }
 
 .hero-section h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 64px;
+    font-size: 50px;
+    color: #333;
 }
 
 .wrapper {
-    word-wrap: break-word;
+    justify-content: center;
+}
+
+/* Typing Interaction for Hero */
+.typewriter h1 {
+    color: #333;
+    font-family: Inter;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #F86624;
+    /* The typwriter cursor */
+    white-space: wrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
 }
 
 .hero-button {
@@ -75,6 +120,22 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 75px;
+    transition: tranform 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+    animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .floating-block {
@@ -85,6 +146,7 @@ nav a {
     margin-left: 30%;
     margin-right: 30%;
     line-height: 50px;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
 }
 
 h2 {
@@ -92,6 +154,7 @@ h2 {
     font-size: 48px;
     padding-top: 100px;
     padding-bottom: 50px;
+    color: #333;
 }
 
 .flexContainer {
@@ -109,68 +172,116 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: 2px solid #F5F5F5;
     width: 30%;
     align-items: center;
     padding-bottom: 60px;
+}
+
+.skillCard:hover {
+box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
 }
 
 .icon {
     width: 100px;
     height: auto;
     margin-right: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 24px;
 }
 
+.Hmong-header {
+    color: #EA3546;
+    margin-top: 60px;
+}
+.NPS-header {
+    color: #F86624;
+    margin-top: 60px;
+}
+.Freetime-header {
+    color: #43BCCD;
+    margin-top: 60px;
+}
+
 #myWork-Grid {
     display: grid;
     grid-template-rows: max-content 3fr 3fr 3fr max-content 100px 300px;
-    background-color: #003049;
     color: #F5F5F5;
     gap: 10px;
+    background-color: white;
 }
 
 .project-card {
     display: grid;
     grid-template-columns: 1fr 1fr 30%;
-    justify-items: center
+    justify-items: center;
+    border: 2px solid #F5F5F5;
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    transition: tranform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 p {
     max-width: 400px;
     font-size: 24px;
+    color: #333;
 }
 
 .circle-background1 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: #EA3546;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
+}
+
+img {
+    width: 200px;
+    height: auto;
 }
 
 .circle-background2 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: #F86624;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 .circle-background3 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: #43BCCD;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 button {
@@ -187,15 +298,85 @@ button {
 
 .view-project1 {
     background-color: #EA3546;
+    box-shadow: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.view-project1:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .view-project2 {
     background-color: #F86624;
+    transition: transform 0.3s ease-in-out;
+}
+
+.view-project2:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.view-project3 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.view-project3:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 h4 {
     text-align: center;
     font-size: 24px;
+    color: #333;
+    margin-top: 60px;
+}
+
+#myBtn {
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: white; /* Remove borders */
+        outline: white; /* Remove outline */
+        background-color: #003049; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 .footer-section {

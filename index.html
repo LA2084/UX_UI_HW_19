@@ -6,6 +6,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src=”https://code.jquery.com/jquery-3.6.1.min.js”></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -24,11 +26,13 @@
 
   <section class="hero-section">
     <div class="floating-block">
-      <img class="round-image" src="images/liz_allen 1.jpg" alt="Woman standing">
-      <h1>Hi, I'm Liz Allen.</h1>
-      <div class="wrapper">
-        <p class="hero-sentence">I'm a passionate UX Designer that enjoys designing beautiful and simple interactive
-          experience for all users.</p>
+      <img class="round-image" src="images/LA Profile Pic.jpg" alt="Woman standing">
+      <div class="typewriter">
+        <h1>Hi, I'm Liz Allen.</h1>
+        <div class="wrapper">
+          <p class="hero-sentence">I'm a passionate UX Designer that enjoys designing beautiful and simple interactive
+            experience for all users.</p>
+        </div>
       </div>
       <button class="hero-button">DOWNLOAD RESUME</button>
     </div>
@@ -66,10 +70,10 @@
     <h2>MY WORK</h2>
     <div class="project-card">
       <div class="circle-background1">
-        <img src="images/Hmong.png" alt="laptop">
+        <img src="images/Hmong.png" alt="laptop" width="500" height="250">  
       </div>
       <div class="project-details">
-        <h3>HMONG WEBSITE REDESIGN</h3>
+        <h3 class="Hmong-header">HMONG WEBSITE REDESIGN</h3>
         <p>A redesign to bring forward important content, optimize navigation for to help users find key services, and
           visual illustrate how donations are making a positive impact on the community.</p>
         <button class="view-project1">View Project</button>
@@ -77,10 +81,10 @@
     </div>
     <div class="project-card">
       <div class="circle-background2">
-        <img src="images/NPS.png" alt="laptop">
+        <img src="images/NPS.png" alt="laptop" width="600" height="150">
       </div>
       <div class="project-details">
-        <h3>NATIONAL PARK SERVICE REDESIGN</h3>
+        <h3 class="NPS-header">NATIONAL PARK SERVICE REDESIGN</h3>
         <p>The current National Park Service website had too many steps for users to take to find parks and other
           amenities. The goal of this project was to increase findability and intuitiveness of the site.</p>
         <button class="view-project2">View Project</button>
@@ -91,15 +95,15 @@
         <img src="images/Freetime.png" alt="laptop">
       </div>
       <div class="project-details">
-        <h3>FREETIME MOBILE CASE STUDY</h3>
+        <h3 class="Freetime-header"> FREETIME MOBILE CASE STUDY</h3>
         <p>This case study walks through the creation of helping busy adults make the most of their free minutes by
           creating an app allowing them to easily find nearby activities they enjoy.</p>
         <button class="view-project3">View Project</button>
       </div>
     </div>
     <h4>View All Projects</h4>
-
   </section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
   <footer>
     <div class="footer-section">
@@ -118,4 +122,5 @@
 </body>
 <script src=”https://code.jquery.com/jquery-3.6.1.min.js”></script>
 <script src="js/index.js"></script>
+
 </html>
