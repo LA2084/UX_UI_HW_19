@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>LA Portfolio Site</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +27,7 @@
 
   <section class="hero-section">
     <div class="floating-block">
+
       <img class="round-image" src="images/LA Profile Pic.jpg" alt="Woman standing">
       <div class="typewriter">
         <h1>Hi, I'm Liz Allen.</h1>
@@ -34,7 +36,16 @@
             experience for all users.</p>
         </div>
       </div>
-      <button class="hero-button">DOWNLOAD RESUME</button>
+
+      <button id="openModalBtn" class="modal-btn">DOWNLOAD RESUME</button>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>This is the modal window.</p>
+      </div>
+    </div>
+
     </div>
   </section>
 
@@ -70,7 +81,7 @@
     <h2>MY WORK</h2>
     <div class="project-card">
       <div class="circle-background1">
-        <img src="images/Hmong.png" alt="laptop" width="500" height="250">  
+        <img src="images/Hmong.png" alt="laptop" width="500" height="250">
       </div>
       <div class="project-details">
         <h3 class="Hmong-header">HMONG WEBSITE REDESIGN</h3>
@@ -119,8 +130,8 @@
     </div>
   </footer>
 
-</body>
+
 <script src=”https://code.jquery.com/jquery-3.6.1.min.js”></script>
 <script src="js/index.js"></script>
-
+</body>
 </html>
