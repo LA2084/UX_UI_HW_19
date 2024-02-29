@@ -153,6 +153,11 @@ nav a:hover {
     width: 80%;
 }
 
+#modal .modal-content p {
+    text-align: center;
+    justify-content: center;
+}
+
 .close {
     color: #aaa;
     float: right;
